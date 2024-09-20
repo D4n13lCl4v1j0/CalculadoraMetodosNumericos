@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  punto_fijo:
+    build: ./punto_fijo
+    ports:
+      - "5003:5003"
