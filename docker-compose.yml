@@ -21,3 +21,8 @@ services:
     ports:
       - "5003:5003"
 
+    broyden:
+    build: ./broyden
+    ports:
+      - "5004:5004"
+
