@@ -11,3 +11,13 @@ services:
     ports:
       - "5002:5002"
 
+  biseccion:
+    build: ./biseccion
+    ports:
+      - "5001:5001"
+      
+  punto_fijo:
+    build: ./punto_fijo
+    ports:
+      - "5003:5003"
+
