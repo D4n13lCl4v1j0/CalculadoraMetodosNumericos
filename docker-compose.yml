@@ -30,8 +30,14 @@ services:
     build: ./gauss_seidel
     ports:
       - "5005:5005"
-      
+
   trapecio:
     build: ./Trapecio
     ports:
       - "5006:5006"
+
+  jacobi:
+    build: ./jacobi
+    ports:
+      - "5007:5007"
+
