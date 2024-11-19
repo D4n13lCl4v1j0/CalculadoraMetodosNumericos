@@ -26,6 +26,11 @@ services:
     ports:
       - "5004:5004"
 
+  gauss_seidel:
+    build: ./gauss_seidel
+    ports:
+      - "5005:5005"
+      
   trapecio:
     build: ./Trapecio
     ports:
