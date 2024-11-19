@@ -6,15 +6,15 @@ services:
     ports:
       - "5000:5000"
 
-  secante:
-    build: ./secante
-    ports:
-      - "5002:5002"
-
   biseccion:
     build: ./biseccion
     ports:
       - "5001:5001"
+      
+  secante:
+    build: ./secante
+    ports:
+      - "5002:5002"
       
   punto_fijo:
     build: ./punto_fijo
@@ -40,4 +40,9 @@ services:
     build: ./jacobi
     ports:
       - "5007:5007"
+
+  simpson:
+    build: ./simpson
+    ports:
+      - "5008:5008"
 
