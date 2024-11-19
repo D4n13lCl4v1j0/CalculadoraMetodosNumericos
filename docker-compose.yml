@@ -26,3 +26,7 @@ services:
     ports:
       - "5004:5004"
 
+  trapecio:
+    build: ./Trapecio
+    ports:
+      - "5006:5006"
