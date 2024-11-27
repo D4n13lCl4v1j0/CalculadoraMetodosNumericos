@@ -45,4 +45,10 @@ services:
     build: ./simpson
     ports:
       - "5008:5008"
+  angular-app:
+    build:
+      context: ./interfazAngular
+      dockerfile: Dockerfile
+    ports:
+      - "5009:5009"
 
