@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
 import numpy as np
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def is_numeric(value):
     try:

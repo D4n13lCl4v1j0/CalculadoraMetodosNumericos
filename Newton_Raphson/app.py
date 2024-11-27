@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import io
 import base64
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def newton_raphson(f, df, x0, tol=1e-6, max_iter=100):
     x = x0

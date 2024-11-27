@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 import matplotlib.pyplot as plt
 import io
 import base64
 
 app = Flask(__name__)
+CORS(app)
 
 # Definición del sistema de ecuaciones
 def sistema(x, k1, k2, k3, F1, F2, F3):

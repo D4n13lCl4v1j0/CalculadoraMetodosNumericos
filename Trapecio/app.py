@@ -5,7 +5,10 @@ import numpy as np
 import io
 import base64
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 
 def metodo_trapecio(f, a, b, n):

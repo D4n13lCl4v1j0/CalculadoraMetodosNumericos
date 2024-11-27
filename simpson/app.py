@@ -5,7 +5,10 @@ import matplotlib.pyplot as plt
 import io
 import base64
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 
 def simpson(f, a, b, n=100):

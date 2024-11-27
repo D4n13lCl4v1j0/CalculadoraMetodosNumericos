@@ -5,7 +5,10 @@ import io
 import base64
 import math  
 
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 errorMin = 0.00001
 
 def secante(funcion, x0, x1, max_iter=100):

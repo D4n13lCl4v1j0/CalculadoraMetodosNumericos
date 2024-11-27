@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
 import numpy as np
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def jacobi_method(A, b, tol=1e-6, max_iter=100):
     n = len(b)

@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-
+from flask_cors import CORS
 import matplotlib.pyplot as plt
 import numpy as np
 import io
@@ -7,6 +7,7 @@ import base64
 import math  
 
 app = Flask(__name__)
+CORS(app)
 
 
 def biseccion(f, a, b, error=1e-6):
