@@ -35,9 +35,6 @@ export class PuntoFijoComponent implements OnInit {
       funcion_original: this.eventForm.get('funcionO')?.value,
       punto_inicial: this.eventForm.get('puntoI')?.value
     };
-      alert(puntoF.funcion);
-      alert(puntoF.funcion_original);
-      alert(puntoF.punto_inicial);
     this.puntoService.save(puntoF).subscribe(
       response => {
         console.log(response);
@@ -64,7 +61,7 @@ export class PuntoFijoComponent implements OnInit {
     this.selectedField = field; // Guarda el campo seleccionado
     const calculatorModal = document.getElementById('calculatorModal');
     if (calculatorModal) {
-      calculatorModal.style.display = 'block';
+      calculatorModal.style.display = 'flex';
     }
   }
 

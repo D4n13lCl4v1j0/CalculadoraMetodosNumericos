@@ -60,7 +60,7 @@ openCalculator(field: string) {
   this.selectedField = field; // Guarda el campo seleccionado
   const calculatorModal = document.getElementById('calculatorModal');
   if (calculatorModal) {
-    calculatorModal.style.display = 'block';
+    calculatorModal.style.display = 'flex';
   }
 }
 
