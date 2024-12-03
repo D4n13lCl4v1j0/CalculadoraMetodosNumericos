@@ -58,7 +58,7 @@ def solve_punto_fijo():
         plt.axhline(0, color="#ff0000")
         plt.axvline(0, color="#ff0000")
         plt.plot(root, 0, 'ko')
-        plt.title("Metodo Punto fijo")
+        plt.title("Método Punto fijo")
         plt.ylabel("Eje Y")
         plt.xlabel("Eje X")
         if (root!= np.nan):
