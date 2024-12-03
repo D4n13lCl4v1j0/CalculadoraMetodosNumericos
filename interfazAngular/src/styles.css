@@ -30,7 +30,7 @@ h1 {
 
 /* Estilos para los botones */
 .btn-primary {
-    background-color: #007bff; /* Azul más vibrante */
+    background-color: indigo; /* Azul más vibrante */
     border: none;
     border-radius: 10px; /* Esquinas ligeramente más suaves */
     font-size: 1.1rem;
@@ -41,7 +41,7 @@ h1 {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Azul más oscuro */
+    background-color: rgb(49, 1, 83); /* Azul más oscuro */
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más suave */
 }
