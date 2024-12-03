@@ -1,4 +1,36 @@
 <div class="row">
+  <div class="col-sm-5">
+    <div class="card">
+      <div class="card-body text-center">
+        <span class="titulo">Método de Simpson</span>
+        <p class="mt-3">
+          El método de Simpson es una técnica de integración numérica que mejora la precisión al aproximar el área bajo una curva. 
+          Se basa en aproximar la función por un polinomio de segundo grado en cada subintervalo, utilizando los puntos extremos y los puntos intermedios.
+        </p>
+        <p>
+          Para aplicar este método, se necesitan:
+        </p>
+        <ul class="text-start">
+          <li>Una <strong>función</strong> f(x) que se desea integrar.</li>
+          <li>El <strong>límite inferior</strong> a del intervalo.</li>
+          <li>El <strong>límite superior</strong> b del intervalo.</li>
+          <li>El <strong>número de subintervalos</strong> n, que debe ser par y mayor o igual a 2 para que el método sea aplicable.</li>
+        </ul>
+        <p>
+          Nota: La integral aproximada se calcula usando la fórmula:
+        </p>
+        <p>
+          I ≈ (h / 3) * [f(a) + 4 * Σ f(x<sub>2i-1</sub>) + 2 * Σ f(x<sub>2i</sub>) + f(b)],
+        </p>
+        <p>
+          donde h = (b - a) / n  es el ancho de cada subintervalo, y los x_i  son los puntos intermedios del intervalo. La fórmula utiliza los valores de la función en los puntos extremos, los puntos impares multiplicados por 4, y los puntos pares multiplicados por 2.
+        </p>
+        <p>
+          Es importante que n sea par, ya que el método requiere que el número de subintervalos sea divisible por 2 para asegurar la precisión en la estimación de la integral.
+        </p>
+      </div>
+    </div>
+  </div>  
     <div class="col-sm-5">
       <div class="card">
         <div class="card-body text-center">

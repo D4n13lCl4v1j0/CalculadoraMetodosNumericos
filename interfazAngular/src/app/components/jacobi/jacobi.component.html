@@ -1,6 +1,35 @@
 <div class="row">
     <div class="col-sm-5">
         <div class="card">
+          <div class="card-body text-center">
+            <span class="titulo">Método de Jacobi</span>
+            <p class="mt-3">
+              El método de Jacobi es una técnica iterativa utilizada para resolver sistemas de ecuaciones lineales de la forma Ax = b. 
+              Se basa en descomponer la matriz A en partes y actualizar las aproximaciones de las soluciones en cada iteración, asumiendo que cada ecuación se puede despejar para una incógnita específica.
+            </p>
+            <p>
+              Para aplicar este método, se necesitan:
+            </p>
+            <ul class="text-start">
+              <li>Una <strong>matriz de coeficientes</strong> A.</li>
+              <li>Un <strong>vector de términos independientes</strong> b.</li>
+              <li>Un <strong>vector inicial</strong> x<sub>0</sub> para comenzar las iteraciones.</li>
+            </ul>
+            <p>
+              Nota: En cada iteración, el valor de cada componente x<sub>i</sub> se calcula utilizando la fórmula:
+            </p>
+            <p>
+              x<sub>i</sub><sup>(k+1)</sup> = (1 / a<sub>ii</sub>) * (b<sub>i</sub> - Σ a<sub>ij</sub> * x<sub>j</sub><sup>(k)</sup>), 
+              con i ≠ j.
+            </p>
+            <p>
+              El proceso continúa hasta que la diferencia entre iteraciones consecutivas sea menor que un umbral de tolerancia o se alcance un número máximo de iteraciones.
+            </p>
+          </div>
+        </div>
+      </div>      
+    <div class="col-sm-5">
+        <div class="card">
             <div class="card-body text-center">
                 <span class="titulo">{{titulo}}</span>
                 <form (ngSubmit)="generar()">
