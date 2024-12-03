@@ -10,7 +10,6 @@ import { SimpsonComponent } from './components/simpson/simpson.component';
 import { TrapecioComponent } from './components/trapecio/trapecio.component';
 import {CalculatorComponent} from "./components/calculator/calculator.component";
 
-
 const routes: Routes = [
   { path: 'PuntoFijo', component:PuntoFijoComponent },
   { path: 'Secante', component:SecanteComponent },
